@@ -4,7 +4,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.integrate import quad
 from scipy.special import kv
-
+from io import BytesIO
+import base64
 
 def asinh(x):
     return np.arcsinh(x)
@@ -203,7 +204,7 @@ def datainput():
 
 
 
-    fig, ax = plt.subplots(figsize=(8,4), subplot_kw=dict(aspect="equal"))
+    fig, ax = plt.subplots(figsize=(8,6), subplot_kw=dict(aspect="equal"))
 
     # Create contour plot
     CS = ax.contour(x1, x2, gesamt_absenkung, linewidths=3, cmap='plasma',levels=10)
@@ -226,8 +227,20 @@ def datainput():
     ax.set_title("Contour plot with line")
 
     # Show plot
-    st.pyplot(fig)
+    #st.pyplot(fig)
 
+    buffer = BytesIO()
+    fig.savefig(buffer, format='png')
+    buffer.seek(0)
+
+
+    data = base64.b64encode(buffer.read()).decode()
+
+# Generate HTML code to display the image with width attribute
+    html = f'<img src="data:image/png;base64,{data}" width=900, height=600>'
+
+# Show the HTML code on Streamlit
+    st.write(html, unsafe_allow_html=True)
 
 
 
