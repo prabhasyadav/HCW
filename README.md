@@ -7,9 +7,9 @@ Python v 3.9 or higher will be required to run the code. Besides Python librarie
 **To use code**:
 
 >1. Clone the repo 
-2. Install the required Python libraries
-3. Open the HCWSimulatorApp.py file in any IDE/terminal
-4. run `streamlit run HCWSimulatorApp.py`
+>2. Install the required Python libraries
+>3. Open the HCWSimulatorApp.py file in any IDE/terminal
+>4. run `streamlit run HCWSimulatorApp.py`
 
 
 **Online App**
@@ -23,11 +23,11 @@ Python v 3.9 or higher will be required to run the code. Besides Python librarie
 
 >The authors of the code are (not in order)
 >>1. Ashima 
-2. Vibhu
-3. Prabhas
-4. and others
+>>2. Vibhu
+>>3. Prabhas
+>>4. and others
 
-More details to follow...,
+**More details to follow...,**
 
 [^1]: Hantush MS, Papadopulos IS (1962) Flow of ground water to collector wells. J Hydraul Div 88(5):221–224
 
