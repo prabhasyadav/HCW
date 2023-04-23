@@ -11,6 +11,8 @@ Python v 3.9 or higher will be required to run the code. Besides Python librarie
 3. Open the HCWSimulatorApp.py file in any IDE/terminal
 4. run `streamlit run HCWSimulatorApp.py`
 
+---
+
 **Online App**
 
 The equation can be more conviniently run using the [streamlit](https://streamlit.io/) app from the app website: [HCW Simulator App](https://prabhasyadav-hcw-hcwsimulatorapp-cq5rll.streamlit.app/).
