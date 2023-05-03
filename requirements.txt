@@ -1,7 +1,6 @@
 streamlit
 numpy
 matplotlib
-scipy
 scipy 
 io
 base64
