@@ -1,7 +1,5 @@
 streamlit
 numpy
 matplotlib
-scipy 
-io
-base64
+scipy
 PIL
